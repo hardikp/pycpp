@@ -1,11 +1,12 @@
+#!/usr/bin/env python3
+# encoding: utf-8
+
 from distutils.core import setup, Extension
 
-module1 = Extension(
-    'demo',
-    sources=['demo.c'], )
+hello_module = Extension('hello', sources=['demo.c'])
 
 setup(
-    name='PackageName',
-    version='1.0',
-    description='This is a demo package',
-    ext_modules=[module1], )
+    name='hello',
+    version='0.1.0',
+    description='Hello world module written in C',
+    ext_modules=[hello_module], )
