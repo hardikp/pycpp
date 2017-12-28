@@ -17,7 +17,7 @@ static PyMethodDef example_methods[] = {
 static struct PyModuleDef example_definition = {
     PyModuleDef_HEAD_INIT,
     "example",
-    "example module containing Classy class and pants() function",
+    "example module containing pants() function",
     -1,
     example_methods,
 };
