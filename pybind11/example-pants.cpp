@@ -14,12 +14,11 @@ PYBIND11_MODULE(example, m) {
         .. currentmodule:: example
         .. autosummary::
            :toctree: _generate
-           add
+           pants
     )pbdoc";
 
-  m.def("add", &add, R"pbdoc(
-        Add two numbers
-        Some other explanation about the add function.
+  m.def("pants", &pants, R"pbdoc(
+        Returns the square of a number
     )pbdoc");
 
   m.attr("__version__") = "dev";
