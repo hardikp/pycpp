@@ -3,10 +3,10 @@
 
 from distutils.core import setup, Extension
 
-hello_module = Extension('hello', sources=['demo.c'])
+hello_module = Extension('example', sources=['example.cpp'], language='C++')
 
 setup(
-    name='hello',
+    name='example',
     version='0.1.0',
-    description='Hello world module written in C',
+    description='example module written in C++',
     ext_modules=[hello_module], )
