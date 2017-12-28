@@ -3,10 +3,10 @@
 
 from distutils.core import setup, Extension
 
-hello_module = Extension('example', sources=['example-classy.cpp'], language='C++')
+example_module = Extension('example', sources=['example-classy.cpp'], language='C++')
 
 setup(
     name='example',
     version='0.1.0',
     description='example module written in C++',
-    ext_modules=[hello_module], )
+    ext_modules=[example_module], )
