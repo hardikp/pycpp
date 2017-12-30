@@ -9,3 +9,5 @@
     ```bash
     pip3 install -e .
     ```
+
+This is tested on Ubuntu.
