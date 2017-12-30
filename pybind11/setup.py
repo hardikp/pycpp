@@ -5,7 +5,7 @@ import pybind11
 
 example_module = Extension(
     'example',
-    sources=['example-classy.cpp'],
+    sources=['example-pants.cpp'],
     language='C++',
     include_dirs=[pybind11.get_include(True)], )
 
